@@ -1,0 +1,168 @@
+/* 🌟 Basic Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+}
+
+/* 🎯 Container Styling */
+.container {
+  width: 90%;
+  max-width: 500px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #e3f2fd;
+  color: cyan;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+/* 📝 Header */
+header h1 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+/* 📌 Form Input & Button */
+form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+input {
+  flex: 1;
+  min-width: 60%;
+  padding: 10px;
+  border: 2px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+button {
+  padding: 10px 15px;
+  background: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: 0.3s;
+  min-width: 100px;
+}
+
+button:hover {
+  background: #0056b3;
+}
+
+/* 📜 Task List */
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+/* 📌 Single Task Item */
+.list-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: white;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  flex-wrap: wrap;
+}
+
+/* ✅ Task Text */
+.list-item span {
+  font-size: 16px;
+  color: #333;
+  cursor: pointer;
+  word-break: break-word;
+  max-width: 70%;
+}
+
+/* ❌ Delete Button */
+.list-btn {
+  background: #ff4d4d;
+  color: white;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.list-btn:hover {
+  background: #cc0000;
+}
+
+/* 📱 Responsive Design */
+@media screen and (max-width: 600px) {
+  .container {
+      width: 95%;
+      padding: 15px;
+  }
+
+  form {
+      flex-direction: column;
+  }
+
+  input {
+      width: 100%;
+  }
+
+  button {
+      width: 100%;
+  }
+
+  .list-item {
+      flex-direction: column;
+      align-items: flex-start;
+  }
+
+  .list-item span {
+      max-width: 100%;
+  }
+
+  .list-btn , .edit-btn , .save-btn {
+      width: 100%;
+      margin-top: 5px;
+  }
+ 
+}
+.list-item input {
+  padding: 5px;
+  font-size: 16px;
+  width: 60%;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.edit-btn, .save-btn {
+  background: #ffa500;
+  color: white;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: 0.3s;
+  margin-left: 5px;
+}
+
+.edit-btn:hover, .save-btn:hover {
+  background: #cc8400;
+}
+
+.data{
+  width: 12rem;
+  text-align: left;
+}
